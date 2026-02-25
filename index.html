@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Seguras Gratis</title>
+    <meta name="description" content="Genera contraseñas aleatorias, seguras y robustas en un clic. Protege tus cuentas fácilmente.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        
+        <div class="result-container">
+            <span id="result">P4$5W0rD!</span>
+            <button class="btn" id="clipboard">Copiar</button>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label>Longitud (caracteres)</label>
+                <input type="number" id="length" min="4" max="50" value="16">
+            </div>
+            <div class="setting">
+                <label>Incluir Mayúsculas</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label>Incluir Minúsculas</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label>Incluir Números</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label>Incluir Símbolos</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">Generar Contraseña</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
